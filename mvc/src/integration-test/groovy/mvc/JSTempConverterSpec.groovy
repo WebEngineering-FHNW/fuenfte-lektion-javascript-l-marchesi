@@ -21,7 +21,7 @@ class JSTempConverterSpec extends GebSpec {
             $("form").celsius = "42"
 
         then: "the other field is updated immediately"
-            $("form").fahrenheit  == "32"
+            $("form").fahrenheit  == "107.6" // should be 107.6 ...
     }
 
     // TODO: make a new test method for fahrenheit to celsius conversion
