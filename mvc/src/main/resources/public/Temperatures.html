@@ -30,6 +30,8 @@
             <label for='fahrenheit'>Fahrenheit</label>
             <input type="number decimal" name="fahrenheit" value="0.0"
                    required="true" min="1.0" max="6.0" id="fahrenheit"
+                   onchange="document.getElementById('fahrenheit').value = fahrenheitToCelsius(value);"
+
             />
             <!--TODO: make value changes of fahrenheit update the celsius field-->
         </div>
