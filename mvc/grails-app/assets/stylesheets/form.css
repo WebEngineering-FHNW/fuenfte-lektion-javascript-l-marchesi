@@ -11,7 +11,7 @@ input {
   clear:   right;
 }
 
-@keyframes shake {
+@keyframes shake { /* here it gets defined how much it shakes */
     0% {transform: rotate(0deg)}
    33% {transform: rotate(3deg)}
    66% {transform: rotate(-3deg)}
