@@ -32,11 +32,11 @@ class JSTempConverterSpec extends GebSpec {
         then:
         title == "Temperature Converter with JavaScript"
 
-        when: "set celsius without clicking"
+        when: "set fahrenheit without clicking"
         $("form").fahrenheit = "32"
 
         then: "the other field is updated immediately"
-        $("form").celsius  == "42"
+        $("form").celsius  == "0.0"
     }
 
 }
