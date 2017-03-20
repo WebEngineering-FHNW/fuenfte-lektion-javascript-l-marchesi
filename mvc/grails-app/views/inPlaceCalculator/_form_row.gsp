@@ -9,12 +9,18 @@
 
 <%@ page import="static mvc.FieldUtil.*" %>
 
+<script language="JavaScript">
+  function foo(inputField) {
+      alert(inputField.name + ' value needs to be at least 1.0');
+  }
+</script>
+
 <div>
   <label for='${name}'>${label}</label>
   <input type="number decimal" name="${name}" value="${model.getProperty(name)}"
          required="true" min="1.0" max="6.0" id="${name}"
          class="${hasError(model, name) ? 'error' : ''}"
          title="${g.message(error: findError(model, name)) }"
-          onchange="alert('bin hier! Ich wurde geklickt.')"
+          onchange="foo(this)"
   />
 </div>
